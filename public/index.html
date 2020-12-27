@@ -41,7 +41,7 @@
     <script>
         const socket  = io('https://react-socket-server-dr.herokuapp.com/');
 
-        const formulario  = document.querySelector('#miFormulario');
+        /*const formulario  = document.querySelector('#miFormulario');
         const misMensajes = document.querySelector('#misMensajes')
         const txtMensaje = document.querySelector('#txtMensaje');
         formulario.addEventListener('submit',(e)=>{
@@ -50,11 +50,11 @@
             const nuevoMensaje = txtMensaje.value;
 
             socket.emit('mensaje-to-server',{texto: nuevoMensaje});
-        });
+        });*/
 
         socket.on('mensaje-from-server',(data) =>{
             
-            misMensajes.innerHTML += `<li>${data.texto}</li>` 
+            //misMensajes.innerHTML += `<li>${data.texto}</li>` 
         } )
 
 
