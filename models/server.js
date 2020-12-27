@@ -35,7 +35,7 @@ class Server {
         this.consfigurarSockets();
         // inicializar server
         this.server.listen(this.port,()=>{
-            console.log('Server corriendo en puerto : 8080');
+            console.log(`Server corriendo en puerto : ${process.env.PORT}`);
         });
     }
 }
